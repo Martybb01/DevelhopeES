@@ -1,0 +1,14 @@
+caption {
+  color: brown;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 30px;
+}
+.totale {
+  text-decoration: underline;
+}
