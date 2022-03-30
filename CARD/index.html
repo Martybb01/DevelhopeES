@@ -5,46 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Il mio piatto preferito</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <main>
-      <article>
-        <img
-          src="carbonara.jpeg"
-          alt="foto della carbonara"
-          width="300px"
-          height="300px"
-        />
-        <header>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-image"></div>
           <h1>Carbonara</h1>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi
-          eius tempora est nobis error perferendis voluptatem vel facilis nulla
-          asperiores quo quis ad itaque maxime ut ipsum, dolor hic!
-        </p>
-        <hr />
-        <p>uova</p>
-        <hr />
-        <p>Pecorino romano</p>
-        <hr />
-        <p>Guanciale</p>
-        <hr />
-        <footer>
-          <a
-            href="https://blog.giallozafferano.it/dulcisinforno/spaghetti-alla-carbonara/"
-            title="ricetta di giallo zafferano"
-            target="_blank"
-            >Ricetta classica</a
-          >
-          <a
-            href="https://cottoecrudo.it/recipe/carbonara-rivisitata/"
-            title="ricetta carbonara con speck"
-            target="_blank"
-            >Rivisitazione con lo speck!</a
-          >
-        </footer>
-      </article>
+        </div>
+        <div class="card-content">
+          <p class="card-content-p">
+            La ricetta della <span>carbonara</span> nasce nel secondo
+            dopoguerra, in parte americana, in parte napoletana, in parte
+            abruzzese, solo dopo tanti anni diviene ricetta tradizionale romana.
+          </p>
+        </div>
+        <div class="card-content">
+          <p>Uova con tuorlo rosso</p>
+        </div>
+        <div class="card-content">
+          <p>Pecorino romano</p>
+        </div>
+        <div class="card-content">
+          <p>Guanciale</p>
+        </div>
+
+        <div class="card-buttons">
+          <div class="card-button">
+            <a
+              class="ricetta1"
+              href="https://blog.giallozafferano.it/dulcisinforno/spaghetti-alla-carbonara/"
+              title="ricetta di giallo zafferano"
+              target="_blank"
+              >Ricetta classica</a
+            >
+          </div>
+          <div class="card-button">
+            <a
+              href="https://cottoecrudo.it/recipe/carbonara-rivisitata/"
+              title="ricetta carbonara con speck"
+              target="_blank"
+              >Rivisitazione con lo speck!</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
