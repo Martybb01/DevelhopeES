@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lezione HTML</title>
+  </head>
+  <body>
+    <form>
+      <section>
+        <div>
+          <label for="button">
+            <span>Pulsante:</span>
+            <input type="radio" id="button" name="button" disabled />
+          </label>
+        </div>
+        <div>
+          <label for="number">
+            <span>Quanto sei affamato?</span>
+            <input
+              type="range"
+              id="number"
+              name="number"
+              min="0"
+              max="100"
+              step="2"
+              autofocus
+            />
+          </label>
+        </div>
+        <div>
+          <label for="smart">
+            Intelligente
+            <input
+              type="checkbox"
+              id="smart"
+              value="smart"
+              name="smart"
+              checked
+            />
+          </label>
+        </div>
+        <div>
+          <label for="date"> Start date: </label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value="2022-03-20"
+            min="2018-01-01"
+            max="2030-01-01"
+          />
+        </div>
+      </section>
+    </form>
+  </body>
+</html>
