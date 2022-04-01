@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lezione HTML</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#">
+      <section class="general-info">
+        <h1>Informazioni generali</h1>
+        <div>
+          <label for="form-email"
+            >Email:
+            <input type="email" id="form-email" name="email" required />
+          </label>
+          <label for="form-pass"
+            >Password:
+            <input type="password" id="form-pass" name="password" required />
+          </label>
+        </div>
+        <div>
+          <label for="form-name&surname">
+            Nome e Cognome:
+            <input type="text" id="form-name&surname" name="name" required />
+          </label>
+          <label for="form-birthday">
+            Data di Nascita:
+            <input
+              type="date"
+              id="form-birthday"
+              name="date"
+              min="1900-01-01"
+              required
+            />
+          </label>
+          <label for="form-phone">
+            Numero di Telefono:
+            <input
+              type="tel"
+              id="form-phone"
+              name="phone"
+              minlength="8"
+              maxlength="12"
+              required
+            />
+          </label>
+        </div>
+      </section>
+      <section class="plan-info">
+        <h1>Informazioni di abbonamento</h1>
+        <div>
+          <label for="form-plan">Piano di abbonamento:</label>
+          <select id="form-plan" name="plan">
+            <option value="0">Free</option>
+            <optgroup label="Premium">
+              <option value="29">29€ per 1 mese</option>
+              <option value="50">50€ per 3 mesi</option>
+              <option value="250">250€ per 1 anno</option>
+            </optgroup>
+          </select>
+          <label for="form-proplan"
+            >Aggiungere vantaggi PRO?
+            <input type="checkbox" id="form-proplan" name="proplan" />
+          </label>
+        </div>
+      </section>
+      <section class="payment-info">
+        <h1>Informazioni di fatturazione</h1>
+        <div>
+          <label for="form-cc">
+            Numero Carta di Credito:
+            <input type="text" id="form-cc" name="cc" />
+          </label>
+          <label for="form-cvc"
+            >CVC:
+            <input
+              type="text"
+              id="form-cvc"
+              name="cvc"
+              pattern="^[0-9]{3, 4}$"
+            />
+          </label>
+          <label for="form-expcc">
+            Data di Scadenza:
+            <input type="date" id="form-expcc" name="expcc" min="2010-01-01" />
+          </label>
+          <label for="form-contact">
+            Indirizzo di fatturazione:
+            <input type="text" id="form-contact" name="contact" required />
+          </label>
+        </div>
+      </section>
+      <div>
+        <input type="submit" value="Registrati" />
+      </div>
+    </form>
+  </body>
+</html>
