@@ -17,7 +17,7 @@
           >Binance</a
         >
         <div class="nav-dropdown">
-          <button class="nav-dropbtn">Criptovalute</button>
+          <button class="nav-dropbtn">Criptovalute ▽</button>
           <div class="nav-dropcontent">
             <a href="#">Bitcoin</a>
             <a href="#">Ethereum</a>
@@ -28,7 +28,13 @@
         <form>
           <div class="search">
             <label for="form-search">
-              <input type="search" id="form-search" name="search" />
+              <input
+                type="search"
+                id="form-search"
+                name="search"
+                size="20"
+                value="Search"
+              />
             </label>
             <button class="search-btn">Search</button>
           </div>
@@ -39,10 +45,57 @@
 
     <main>
       <section>
-        <h2 class="title">Cos'è la blockchain?</h2>
         <article>
-          <p></p>
-          <img />
+          <h2 class="title">Cos'è la blockchain?</h2>
+          <p>
+            La blockchain è un
+            <span>registro di contabilità condiviso e immutabile</span>
+            che facilita il processo di registrazione delle transazioni e la
+            tracciabilità dei beni in una rete commerciale. <br />
+            Un asset può essere tangibile (una casa, un'auto, denaro, terra) o
+            intangibile (proprietà intellettuale, brevetti, copyright,
+            branding). <br />
+            Praticamente qualsiasi cosa che abbia un valore può essere
+            rintracciata e scambiata su una rete blockchain, riducendo rischi e
+            costi per tutti gli interessati.
+          </p>
+          <br />
+          <h3>Elementi chiave di una blockchain:</h3>
+          <ul>
+            <li>
+              <span>Tecnologia di registro distribuito</span> --> Tutti i
+              partecipanti alla rete hanno accesso al registro distribuito e al
+              record immutabile di transazioni in esso contenuto. Con questo
+              registro condiviso, le transazioni vengono annotate una sola
+              volta, eliminando la duplicazione dei compiti, tipica delle reti
+              di business tradizionali.
+            </li>
+            <li>
+              <span>Record immutabili</span> --> Nessun partecipante potrà
+              modificare o manomettere una transazione, una volta annotata nel
+              registro condiviso. Se un record di transazione contiene un
+              errore, dovrà essere aggiunta una nuova transazione per correggere
+              l'errore, dopodiché entrambe le transazioni saranno visibili.
+            </li>
+            <li>
+              <span> Intelligenti </span>--> Per accelerare le transazioni, un
+              set di regole, chiamate contratto intelligente (smart contract),
+              viene memorizzato sulla blockchain ed eseguito automaticamente. Un
+              contratto intelligente può definire le condizioni per i
+              trasferimenti di obbligazioni aziendali, includere le condizioni
+              per l'assicurazione di viaggio da pagare e molto altro ancora.
+            </li>
+          </ul>
+          <br />
+          <div class="image">
+            <img
+              src="/BLOG-NAVBAR/assets/blockchain.PNG"
+              alt="funzionamento della blockchain"
+              height="350px"
+              width="450px"
+            />
+            <img />
+          </div>
         </article>
       </section>
 
@@ -50,12 +103,16 @@
         <form>
           <div>
             <label for="form-email"
-              >Email
-              <input type="email" id="form-email" name="email" required />
+              >Email:
+              <input
+                type="email"
+                id="form-email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
             </label>
             <label for="form-submit"></label>
-          </div>
-          <div>
             <input type="submit" value="Iscriviti alla newsletter!" />
           </div>
         </form>
