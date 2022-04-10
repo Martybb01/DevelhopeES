@@ -1,6 +1,12 @@
 body {
   color: lightslategray;
 }
+.paragrafo::first-letter {
+  color: darkred;
+  border: 3px ridge darkgoldenrod;
+
+  background-color: gold;
+}
 
 blockquote {
   background-color: rgba(0, 12, 24, 0.05);
