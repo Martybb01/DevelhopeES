@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+section#yellow {
+  order: -1;
+}
+section#red {
+  order: -1;
+}
+section#orange {
+  flex: 1;
+}
