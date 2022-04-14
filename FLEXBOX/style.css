@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  border: 1px solid red;
+  margin: 10px;
+}
+.form {
+  align-self: center;
+  margin-top: 10px;
+}
+input[type="text"] {
+  padding: 5px;
+}
+.link {
+  align-self: center;
+  list-style-type: none;
+}
+li {
+  margin: 5px;
+}
+
+li > a {
+  color: #2b2b2b;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 18px;
+}
+li > a:hover {
+  color: #2b2bb2;
+  cursor: pointer;
+}
+.avatar {
+  align-self: center;
+  margin-bottom: 10px;
+}
