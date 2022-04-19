@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b698d991d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Navbar 2.0</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-left">
+          <div class="nav-logo">
+            <span>Navbar</span>
+          </div>
+          <div class="nav-menu-item">
+            <a href="#" class="home">Home</a>
+          </div>
+        </div>
+        <div class="nav-center">
+          <div class="nav-menu">
+            <div class="nav-menu-item">
+              <a href="#">Link</a>
+            </div>
+            <div class="nav-menu-dropdown">
+              <div class="nav-menu-dropdown-label">
+                <span>Dropdown</span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="nav-menu-item">
+              <a role="link" aria-disabled="true" class="disabled">Disabled</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <form>
+            <div class="search">
+              <label for="input-search">
+                <input
+                  type="search"
+                  id="input-search"
+                  name="search"
+                  size="20"
+                  value=" Search"
+                />
+              </label>
+              <button class="search-btn">Search</button>
+            </div>
+          </form>
+          <div class="nav-menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
