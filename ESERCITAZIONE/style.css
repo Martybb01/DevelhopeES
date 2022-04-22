@@ -1,0 +1,60 @@
+:root {
+  --navbar: #ffb1b1;
+  --sidebar: #d4fcce;
+  --box-side: #a7a7a7;
+  --box-body: #c4c4c4;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: var(--navbar);
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: calc(100vh - 50px);
+}
+.sidebar {
+  background-color: var(--sidebar);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  padding: 15px;
+}
+.item {
+  height: 27px;
+  width: 100%;
+  background-color: var(--box-side);
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+  padding: 15px;
+}
+.photo {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: var(--box-side);
+}
+.name {
+  height: 27px;
+  flex-grow: 1;
+  background-color: var(--box-side);
+}
