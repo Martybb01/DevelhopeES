@@ -58,3 +58,37 @@ nav {
   flex-grow: 1;
   background-color: var(--box-side);
 }
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: calc(100vw - 200px);
+  padding: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+.article1 {
+  background-color: var(--box-body);
+  grid-column: 1;
+  grid-row: 1;
+  height: auto;
+}
+.article2 {
+  background-color: var(--box-body);
+  grid-column: 2;
+}
+.article3 {
+  background-color: var(--box-body);
+  grid-column: 1;
+  grid-row: 2 / 3;
+}
+.article4 {
+  background-color: var(--box-body);
+  grid-column: 2;
+  grid-row: 2 / 3;
+}
+.article5 {
+  background-color: var(--box-body);
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
