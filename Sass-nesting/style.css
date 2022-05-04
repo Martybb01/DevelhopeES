@@ -1,0 +1,30 @@
+div {
+  border: 1px solid red;
+  width: 100%;
+}
+div h1 {
+  text-align: center;
+  color: green;
+  text-decoration: underline 0.8px blue;
+}
+div section {
+  border: 1px solid green;
+  display: flex;
+  margin: 8px;
+}
+div section article {
+  display: flex;
+  border: 0.5px solid green;
+  padding: 10px;
+}
+div section article p {
+  text-align: center;
+}
+div section article .blue {
+  color: blue;
+}
+div section article .red {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
