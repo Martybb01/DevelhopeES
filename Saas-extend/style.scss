@@ -1,0 +1,59 @@
+$primary-color: red;
+$secondary-color: blue;
+$tertiary-color: green;
+$my-padding: 1rem;
+
+@mixin article-style($color, $bcolor, $size: 1rem) {
+  color: $color;
+  border: 1px solid $bcolor;
+  font-size: $size;
+}
+@mixin flex($direction, $items, $content) {
+  flex-direction: $direction;
+  align-items: $items;
+  justify-content: $content;
+}
+%text {
+  color: $tertiary-color;
+  text-align: center;
+}
+
+div {
+  width: 100%;
+  border: 1px solid $primary-color;
+  display: flex;
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+  & h1 {
+    @extend %text;
+    text-decoration: underline 0.8px $secondary-color;
+    width: 100%;
+  }
+  & h2 {
+    @extend %text;
+    padding: $my-padding;
+    border: 1px solid $primary-color;
+  }
+  & section {
+    display: flex;
+    margin: 10px;
+    & .red {
+      @include article-style($primary-color, $tertiary-color);
+      @include flex(column, center, center);
+      padding: $my-padding;
+    }
+    & .blue {
+      @include article-style($secondary-color, $tertiary-color);
+      @include flex(column, center, center);
+      padding: $my-padding;
+    }
+    & .green {
+      @include article-style($tertiary-color, $secondary-color, 24px);
+      @include flex(column, center, center);
+      padding: $my-padding;
+    }
+    & p {
+      text-align: center;
+    }
+  }
+}
