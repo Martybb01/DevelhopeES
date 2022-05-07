@@ -1,0 +1,49 @@
+@import "function";
+@import "base";
+
+@mixin article-style($color, $bcolor, $size: 1rem) {
+  color: $color;
+  border: 1px solid $bcolor;
+  font-size: $size;
+}
+@mixin flex($direction, $items, $content) {
+  flex-direction: $direction;
+  align-items: $items;
+  justify-content: $content;
+}
+
+div {
+  width: 100%;
+  border: 1px solid $primary-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  h1 {
+    color: $tertiary-color;
+    text-decoration: underline 0.8px $secondary-color;
+    text-align: center;
+  }
+  section {
+    display: flex;
+    margin: 10px;
+    .red {
+      @include article-style($primary-color, $tertiary-color);
+      @include flex(column, center, center);
+      padding: $my-padding;
+      height: pxtorem(160);
+    }
+    .blue {
+      @include article-style($secondary-color, $tertiary-color);
+      @include flex(column, center, center);
+      padding: $my-padding;
+    }
+    .green {
+      @include article-style($tertiary-color, $secondary-color, 24px);
+      @include flex(column, center, center);
+      padding: $my-padding;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
