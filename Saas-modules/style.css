@@ -1,3 +1,8 @@
+h1,
+p {
+  font-size: 10rem;
+}
+
 div {
   width: 100%;
   border: 1px solid red;
@@ -22,7 +27,6 @@ div section .red {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  height: 10rem;
 }
 div section .blue {
   color: blue;

@@ -1,5 +1,5 @@
-@import "function";
-@import "base";
+@use "base" as color;
+@use "function" as f;
 
 @mixin article-style($color, $bcolor, $size: 1rem) {
   color: $color;
@@ -11,36 +11,43 @@
   align-items: $items;
   justify-content: $content;
 }
+h1,
+p {
+  font-size: f.pxtorem(160);
+}
 
 div {
   width: 100%;
-  border: 1px solid $primary-color;
+  border: 1px solid color.$primary-color;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   h1 {
-    color: $tertiary-color;
-    text-decoration: underline 0.8px $secondary-color;
+    color: color.$tertiary-color;
+    text-decoration: underline 0.8px color.$secondary-color;
     text-align: center;
   }
   section {
     display: flex;
     margin: 10px;
     .red {
-      @include article-style($primary-color, $tertiary-color);
+      @include article-style(color.$primary-color, color.$tertiary-color);
       @include flex(column, center, center);
-      padding: $my-padding;
-      height: pxtorem(160);
+      padding: color.$my-padding;
     }
     .blue {
-      @include article-style($secondary-color, $tertiary-color);
+      @include article-style(color.$secondary-color, color.$tertiary-color);
       @include flex(column, center, center);
-      padding: $my-padding;
+      padding: color.$my-padding;
     }
     .green {
-      @include article-style($tertiary-color, $secondary-color, 24px);
+      @include article-style(
+        color.$tertiary-color,
+        color.$secondary-color,
+        24px
+      );
       @include flex(column, center, center);
-      padding: $my-padding;
+      padding: color.$my-padding;
     }
     p {
       text-align: center;
